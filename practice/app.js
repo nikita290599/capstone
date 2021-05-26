@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -16,8 +17,8 @@ const options = {
     socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
     family: 4 // Use IPv4, skip trying IPv6
   };
-const uri= 'mongodb+srv://Nikita2905:Nikita@2905@cluster0.av8nh.mongodb.net/studentsDB?retryWrites=true&w=majority'
-mongoose.connect(uri, options, function(error) {
+
+mongoose.connect(process.env.uri, options, function(error) {
     if(error){
 
         console.log("error in setting up connection to database",error);
