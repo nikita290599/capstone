@@ -15,21 +15,21 @@ function AddGrocery({fetchGroceryItems}) {
     return (
 
         
-      <div className="input-group mb-3 w-100">
+      <div className="mb-3 w-100 d-flex">
         <input
           type="text"
-          className="form-control "
+          className=""
           placeholder="Grocery Item"
           aria-label="Grocery Item"
           value={groceryInputText}
           onChange={(e) => updateGroceryInput(e.target.value)}
         />
         <button
-          className="input-group-text btn btn-warning text-light"
+          className=""
           id="basic-addon2"
           onClick={() => handleAddingItems()}
         >
-          Add Grocery Item
+          Add Item
         </button>
       </div>
     

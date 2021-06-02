@@ -40,16 +40,16 @@ function GrocerySection() {
         return (
             groceryItems.map((item) => {
                 return (
-                    <div className={classNameModule("list-grocery d-flex", {
+                    <div className={classNameModule(" d-flex", {
                         "purchased": item.isPurchased === true
                     })}
                     key={item._id}
                     >
-                        <div>{item.groceryItem}</div>
+                        <div className="grocery-list-display">{item.groceryItem}</div>
                         <div className="grocery-actions ">
                             {
                                 item.isPurchased === false ?
-                                 (<button className="btn btn-warning mr-3 text-light" 
+                                 (<button className="btn btn-purchase  mr-3 text-light" 
                                  onClick={()=>handlePurchaseUpdate(item)}>Purchase</button>)
                                  : null
                             }
@@ -65,9 +65,9 @@ function GrocerySection() {
     }
 
     return (
-        <div className='d-flex justify-content-center align-items-center flex-column  w-100'>
-            <h2 className='mb-5 text-warning'>Grocery List</h2>
-            <div className='w-50'>
+        <div className='grocery-container d-flex align-items-center flex-column '>
+            <h1 className=' heading mb-5'>Grocery List</h1>
+            <div className='w-100'>
                 <AddGrocery
                     fetchGroceryItems={fetchGroceryItems}
                 />
