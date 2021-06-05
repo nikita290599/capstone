@@ -1,0 +1,40 @@
+.App {
+  text-align: center;
+}
+
+.subcategories{
+  margin:auto;
+  max-width: 60vw;
+ 
+}
+.img-sub{
+  width:20vw;
+  border-radius: 5px;
+  background-attachment: fixed;
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+.cart{
+  margin:1vw;
+  width:60vw;
+  height:20vh;
+  box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.4);
+  border-radius: 5px;
+
+}
+.img-sub img{
+  width:15vw;
+  height:18vh;
+}
+.card-body{
+  width:30vw;
+}
+.cart .button{
+  height:5vh;
+  margin-top:7vh;
+}
+.button button{
+  width:10vw;
+}

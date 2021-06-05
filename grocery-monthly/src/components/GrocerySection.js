@@ -55,7 +55,7 @@ function GrocerySection() {
                             }
 
                         </div>
-                        <div><button className="btn btn-danger"
+                        <div><button className="btn btn-pink text-light"
                         onClick={()=>handleDelete(item)}
                         >X</button></div>
                     </div>
